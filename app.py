@@ -13,9 +13,11 @@ def home():
 @app.route('/query', methods = ['POST'])
 def query():
 	if flask.request.method == 'POST':
+		print("yo")
 		print(flask.request.form)
+	return "ok",200
 
 
 
 if __name__ == "__main__":
-	app.run(debug = True, port=5001)
+	app.run(debug = True, port=5003)
