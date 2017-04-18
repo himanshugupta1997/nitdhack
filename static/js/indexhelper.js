@@ -19,12 +19,7 @@ $(function () {
 
         var K = $('#query').val();
 
-        if(K.length < 150)
-        {
-            alert("Please provide us with enough details to help you out. Write minimum of 160 characters");
-        }
-
-        S.post('/query', {'query' : K}, function (data, status) {
+        $.post('/query', {'query' : K}, function (data, status) {
 
         });
 
